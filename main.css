@@ -397,11 +397,40 @@ podcast-entry.podcast-rating {
     background-color: white;
 }
 
-/*news page title*/
+/*outreach page title*/
 #outreach-title {
     position: absolute;
     top: 50px;
     left: 70px;
+}
+
+#outreach-page-body {
+    float: center;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    position: absolute;
+    top: 140px;
+    left: 70px;
+}
+
+#project {
+    display: inline-grid;
+    border: 3px solid #80ffe5;
+    background-color: #80ffe5;
+    opacity: 0.7;
+    width: 35%;
+    padding: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top, margin-bottom: auto;
+}
+
+#project-body {
+    padding: 5px;
+    text-align: justify;
 }
 
 /*contact page*/
