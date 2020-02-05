@@ -75,14 +75,14 @@
     font-weight: 300;
 }
 
-#home-option, #about-option, #disciplines-option, #universities-option,
+#index-option, #about-option, #disciplines-option, #universities-option,
     #outreach-option, #contact-option {
     display: inline-block;
 }
 
 /*when the user hovers over the navigation bar options,
     they turn mint green*/
-#home-option:hover a, #about-option:hover a, #disciplines-option:hover a,
+#index-option:hover a, #about-option:hover a, #disciplines-option:hover a,
     #universities-option:hover a, #outreach-option:hover a, #contact-option:hover a {
     color: #80ffe5;
 }
