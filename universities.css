@@ -1,0 +1,647 @@
+/*fonts used throughout the website*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,500);
+
+/*container for everything on a web page*/
+#page-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow-y: scroll;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+    height: auto;
+}
+
+/*header for all webpages*/
+#header {
+    height: 100%;
+    position: relative;
+}
+
+/*footer with contact links for all pages*/
+/*footer format*/
+#universities-footer {
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    margin-right: 50%;
+}
+
+/*footer contact link buttons format*/
+.fa {
+    padding: 10px;
+    font-size: 3rem;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/*contact link buttons: hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #80ffe5;
+    color: black;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #80ffe5;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
+    color: black;
+}
+
+/* Email */
+.fa-envelope-o {
+    background: #80ffe5;
+    color: black;
+}
+
+/*navigation bar*/
+#navbar a {
+    float: center;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#home-option, #about-option, #disciplines-option, #universities-option,
+    #outreach-option, #contact-option {
+    display: inline-block;
+}
+
+/*when the user hovers over the navigation bar options,
+    they turn mint green*/
+#home-option:hover a, #about-option:hover a, #disciplines-option:hover a,
+    #universities-option:hover a, #outreach-option:hover a, #contact-option:hover a {
+    color: #80ffe5;
+}
+
+/*body text for all pages*/
+body {
+    height: 100%;
+    margin: 0;
+    test-align: center;
+    width: 100%;
+    font-family: 'Quicksand', serif;
+    font-weight: 300;
+}
+
+/*h1 text format is same for all pages*/
+h1 {
+    font-size: 4rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 500;
+}
+
+/*h2 text format is same for all pages*/
+h2 {
+    font-size: 3rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 500;
+}
+
+/*h3 text format is same for all pages*/
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 200;
+}
+
+/*formatting for webpage title*/
+#title {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    padding: 15px;
+}
+
+/*when the user hovers over the title link, it turns mint green*/
+#title:hover a {
+    color: #80ffe5;
+}
+
+/*formatting for webpage title logo*/
+#title-logo {
+    display: inline-flex;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+.universities-page-content {
+    display: inline-block;
+}
+
+.universities-page-body {
+    margin-left: 50px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+/*interactive map container*/
+.container {
+    margin-bottom: 30%;
+    float: right;
+    position: absolute;
+}
+
+/*if a user cannot find their university*/
+#policy-not-found {
+    display: inline-block;
+    margin-top: 700px;
+    width: 100%;
+    position: absolute;
+    text-decoration: none;
+}
+
+#policy-not-found a {
+    color: #80ffe5;
+    font-weight: bold;
+}
+
+#policy-not-found a:hover {
+    opacity: 0.7;
+}
+
+/*interactive map details*/
+html, body, img, figure {
+    max-width: 100%;
+}
+button, .btn {
+    -webkit-transition: background-color 250ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: background-color 250ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.slick-slide img {
+    display: block;
+}
+.text-left {
+    text-align: left !important;
+}
+.list-inline, .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', serif;
+}
+.ct-map__section .container {
+    position: absolute;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    float: left;
+}
+.ct-map {
+    position: sticky;
+    padding-top: 40%;
+    width: 125%;
+    -webkit-transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 250ms cubic-bezier(0.55, 0, 0.1, 1);
+    background: none;
+}
+.ct-city.alabama {
+    position: absolute;
+    top: 76%;
+    left: 69%;
+}
+.ct-city.alaska {
+    position: absolute;
+    top: 83%;
+    left: 15%;
+}
+.ct-city.arizona {
+    position: absolute;
+    top: 71%;
+    left: 27%;
+}
+.ct-city.arkansas {
+    position: absolute;
+    top: 72%;
+    left: 59%;
+}
+.ct-city.california {
+    position: absolute;
+    top: 62%;
+    left: 15%;
+}
+.ct-city.colorado {
+    position: absolute;
+    top: 62%;
+    left: 38%;
+}
+.ct-city.connecticut {
+    position: absolute;
+    top: 51.75%;
+    left: 88.5%;
+}
+.ct-city.dc {
+    position: absolute;
+    top: 59%;
+    left: 83%;
+}
+.ct-city.delaware {
+    position: absolute;
+    top: 58%;
+    left: 85.75%;
+}
+.ct-city.florida {
+    position: absolute;
+    top: 84%;
+    left: 79%;
+}
+.ct-city.georgia {
+    position: absolute;
+    top: 76%;
+    left: 75%;
+}
+.ct-city.hawaii {
+    position: absolute;
+    top: 90%;
+    left: 38%;
+}
+.ct-city.idaho {
+    position: absolute;
+    top: 49%;
+    left: 26%;
+}
+.ct-city.illinois {
+    position: absolute;
+    top: 60%;
+    left: 64%;
+}
+.ct-city.indiana {
+    position: absolute;
+    top: 59%;
+    left: 69%;
+}
+.ct-city.iowa {
+    position: absolute;
+    top: 55.5%;
+    left: 57%;
+}
+.ct-city.kansas {
+    position: absolute;
+    top: 63.5%;
+    left: 49.5%;
+}
+.ct-city.kentucky {
+    position: absolute;
+    top: 64.5%;
+    left: 71.5%;
+}
+.ct-city.louisiana {
+    position: absolute;
+    top: 80%;
+    left: 59%;
+}
+.ct-city.maine {
+    position: absolute;
+    top: 42%;
+    left: 92%;
+}
+.ct-city.maryland {
+    position: absolute;
+    top: 58%;
+    left: 83.5%;
+}
+.ct-city.massachusetts {
+    position: absolute;
+    top: 49.5%;
+    left: 89%;
+}
+.ct-city.michigan {
+    position: absolute;
+    top: 51%;
+    left: 70%;
+}
+.ct-city.minnesota {
+    position: absolute;
+    top: 46%;
+    left: 55.5%;
+}
+.ct-city.mississippi {
+    position: absolute;
+    top: 76%;
+    left: 64%;
+}
+.ct-city.missouri {
+    position: absolute;
+    top: 64%;
+    left: 58.5%;
+}
+.ct-city.montana {
+    position: absolute;
+    top: 43%;
+    left: 34%;
+}
+.ct-city.nebraska {
+    position: absolute;
+    top: 56.5%;
+    left: 48%;
+}
+.ct-city.nevada {
+    position: absolute;
+    top: 58%;
+    left: 21%;
+}
+.ct-city.new-hampshire {
+    position: absolute;
+    top: 46.5%;
+    left: 89.5%;
+}
+.ct-city.new-jersey {
+    position: absolute;
+    top: 55.5%;
+    left: 86.5%;
+}
+.ct-city.new-mexico {
+    position: absolute;
+    top: 71%;
+    left: 36%;
+}
+.ct-city.new-york {
+    position: absolute;
+    top: 49.5%;
+    left: 84.5%;
+}
+.ct-city.north-carolina {
+    position: absolute;
+    top: 67.5%;
+    left: 81%;
+}
+.ct-city.north-dakota {
+    position: absolute;
+    top: 43%;
+    left: 47%;
+}
+.ct-city.ohio {
+    position: absolute;
+    top: 57.5%;
+    left: 74%;
+}
+.ct-city.oklahoma {
+    position: absolute;
+    top: 70.5%;
+    left: 50.5%;
+}
+.ct-city.oregon {
+    position: absolute;
+    top: 46%;
+    left: 17.5%;
+}
+.ct-city.pennsylvania {
+    position: absolute;
+    top: 55%;
+    left: 81%;
+}
+.ct-city.rhode-island {
+    position: absolute;
+    top: 51%;
+    left: 90.5%;
+}
+.ct-city.south-carolina {
+    position: absolute;
+    top: 72.5%;
+    left: 79%;
+}
+.ct-city.south-dakota {
+    position: absolute;
+    top: 49%;
+    left: 47%;
+}
+.ct-city.tennessee {
+    position: absolute;
+    top: 68.75%;
+    left: 69%;
+}
+.ct-city.texas {
+    position: absolute;
+    top: 79%;
+    left: 48%;
+}
+.ct-city.utah {
+    position: absolute;
+    top: 60%;
+    left: 29%;
+}
+.ct-city.vermont {
+    position: absolute;
+    top: 46%;
+    left: 87.25%;
+}
+.ct-city.virginia {
+    position: absolute;
+    top: 63%;
+    left: 81%;
+}
+.ct-city.washington {
+    position: absolute;
+    top: 38.5%;
+    left: 19.5%;
+}
+.ct-city.west-virginia {
+    position: absolute;
+    top: 61.5%;
+    left: 77%;
+}
+.ct-city.wisconsin {
+    position:absolute;
+    top: 49%;
+    left: 62%;
+}
+.ct-city.wyoming {
+    position: absolute;
+    top: 52%;
+    left: 36%;
+}
+.ct-popup {
+    background: #80ffe5;
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    text-align: center;
+    color: black;
+    padding: 40px 40px 20px;
+    overflow: hidden;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 12%;
+    -ms-transform-origin: 12%;
+    transform-origin: 12%;
+    opacity: 0;
+    -webkit-transition: all 200ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition: all 200ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.ct-popup.xsmall {
+    width: 400px;
+    height: 400px;
+}
+.ct-popup.small {
+    width: 600px;
+    height: 600px;
+}
+.ct-popup.xlarge {
+    width: 1900px;
+    height: 1500px;
+}
+.ct-popup > .ct-popup__inner, .ct-popup > .inner {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+}
+.ct-popup__name {
+    font-family: 'Quicksand', serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+    display: block;
+}
+.ct-popup__content {
+    font-size: 20px;
+    font-family: 'Quicksand', serif;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.column-overflow {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+.row {
+  display: table;
+  clear: both;
+
+}
+.ct-city {
+    position: absolute;
+    width: 334px;
+    height: 334px;
+}
+.ct-city__button .ct-close {
+    display: none;
+}
+.ct-city.active .ct-city__button .ct-close {
+    display: block;
+}
+.ct-city.active .ct-city__button .ct-plus, .ct-city.active .ct-city__button .ct-city__name {
+    display: none;
+}
+.ct-city {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.ct-city__button {
+    background: none;
+    border: none;
+    z-index: 30;
+    position: absolute;
+    top: 46%;
+    left: 12px;
+    outline: none;
+}
+.ct-content {
+    width: 100%;
+    max-width: 537px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ct-map__section .container .ct-section-header {
+    padding-bottom: 10px;
+}
+.ct-content .ct-section-header {
+    margin-top: 0;
+    padding-top: 83px;
+    letter-spacing: 0.35px;
+}
+.ct-section-header {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    color: #101f1d;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 45px;
+    letter-spacing: 1.25px;
+    margin-bottom: 5px;
+}
+.ct-content .ct-section-header small {
+    margin-bottom: -4px;
+    padding-top: 12px;
+    letter-spacing: 0px;
+}
+.ct-section-header small {
+    color: #303030;
+    font-size: 22px;
+    display: block;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-bottom: -12px;
+    text-transform: none;
+}
+.ct-city.active {
+    z-index: 30;
+}
+.ct-city.active .ct-popup {
+    opacity: 1;
+    display: inline-table;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    position: relative;
+    z-index: 20;
+}
+.ct-content li {
+    font-weight: 700;
+    font-size: 17px;
+    padding-left: 4px;
+}
+.ct-content li:before {
+    content: '\f0da';
+    font-family: 'Quicksand', serif;
+    color: #80ffe5;
+    padding-right: 13px;
+}
+.ct-content .btn {
+    margin-top: 30px;
+}
+.btn.btn-motive {
+    background: #80ffe5;
+    color: #80ffe5;
+}
+.btn {
+    font-size: 15px;
+    padding: 22px 46px 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.3px;
+}

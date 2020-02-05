@@ -1,0 +1,425 @@
+/*fonts used throughout the website*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,500);
+
+/*container for everything on a web page*/
+#page-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+    height: auto;
+}
+
+/*header for all webpages*/
+#header {
+    height: 100%;
+    position: relative;
+}
+
+/*footer with contact links for all pages*/
+/*footer format*/
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+/*footer contact link buttons format*/
+.fa {
+    padding: 10px;
+    font-size: 3rem;
+    width: 17px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/*contact link buttons: hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #80ffe5;
+    color: black;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #80ffe5;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
+    color: black;
+}
+
+/* Email */
+.fa-envelope-o {
+    background: #80ffe5;
+    color: black;
+}
+
+/*navigation bar*/
+#navbar a {
+    float: center;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+#home-option, #about-option, #disciplines-option, #universities-option,
+    #outreach-option, #contact-option {
+    display: inline-block;
+}
+
+/*when the user hovers over the navigation bar options,
+    they turn mint green*/
+    #home-option:hover a, #about-option:hover a, #disciplines-option:hover a,
+        #universities-option:hover a, #outreach-option:hover a, #contact-option:hover a {
+        color: #80ffe5;
+    }
+
+/*body text for all pages*/
+body {
+    height: 100%;
+    margin: 0;
+    test-align: center;
+    width: 100%;
+    font-family: 'Quicksand', serif;
+    font-weight: 300;
+}
+
+/*h1 text format is same for all pages*/
+h1 {
+    font-size: 4rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 500;
+}
+
+/*h2 text format is same for all pages*/
+h2 {
+    font-size: 3rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 500;
+}
+
+/*h3 text format is same for all pages*/
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'Quicksand', serif;
+    font-weight: 200;
+}
+
+/*home page*/
+#home {
+    background-color: white;
+}
+
+/*formatting for webpage title*/
+#title {
+    text-align: right;
+    float: right;
+    display: inline-block;
+    padding: 15px;
+}
+
+/*when the user hovers over the title link, it turns mint green*/
+#title:hover a {
+    color: #80ffe5;
+}
+
+/*formatting for webpage title logo*/
+#title-logo {
+    display: inline-block;
+    padding: 5px;
+}
+
+#home-page-body {
+    position: absolute;
+    width: 735px;
+    height: 100px;
+    left: 50%;
+    margin-top: 300px;
+    margin-left: -370px;
+}
+
+#home-page-body a {
+    color: #80ffe5;
+    font-weight: bold;
+    float: center;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*about page*/
+#about {
+    background-color: white;
+}
+
+/*about page title*/
+#about-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+/*academic disciplines page*/
+#disciplines {
+    background-color: white;
+}
+
+/*disciplines page title*/
+#disciplines-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+/*list of clickable links to different disciplines*/
+#disciplines-list {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: 50%;
+    margin-top: 230px;
+    margin-left: -100px;
+}
+
+#disciplines-list a {
+    float: center;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/*when the user hovers over the discipline links, they turn mint green*/
+#biological-sciences-option:hover a, #medicine-option:hover a,
+    #tech-option:hover a, #physical-sciences-math-option:hover a,
+    #business-option:hover a, #politics-option:hover a,
+    #humanities-option:hover a, #arts-option:hover a {
+    color: #80ffe5;
+}
+
+.physical-sciences-math-dropdown-content {
+    display: none;
+    position: absolute;
+    float: center;
+    text-decoration: none;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.physical-sciences-math-dropdown:hover .physical-sciences-math-dropdown-content {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#physics-option, #chemistry-option, #astronomy-option, #math-option {
+    display: inline-block;
+}
+
+/*when the user hovers over the subdiscipline links, they turn mint green*/
+#physics-option:hover a, #chemistry-option:hover a,
+    #astronomy-option:hover a, #math-option:hover a {
+    color: #80ffe5;
+}
+
+.humanities-dropdown-content {
+    display: none;
+    position: absolute;
+    float: center;
+    text-decoration: none;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.humanities-dropdown:hover .humanities-dropdown-content {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#english-literature-option, #history-option {
+    display: inline-block;
+}
+
+#english-literature-option:hover a {
+    color: #80ffe5;
+}
+
+#history-option:hover a {
+    color: #80ffe5;
+}
+
+.arts-dropdown-content {
+    display: none;
+    position: absolute;
+    float: center;
+    text-decoration: none;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.arts-dropdown:hover .arts-dropdown-content {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#music-option, #theatre-option, #visual-arts-option {
+    display: inline-block;
+}
+
+#music-option:hover a, #theatre-option:hover a, #visual-arts-option:hover a {
+    color: #80ffe5;
+}
+
+/*subdiscipline pages content*/
+.books-section, .podcasts-section {
+    position: relative;
+    left: 50px;
+    background-color: white;
+    height: 500px;
+    width: 95%;
+    overflow-y: auto;
+    border-left: 1px solid black;
+}
+
+#books-title, #podcasts-title {
+    position: relative;
+    left: 50px;
+}
+
+#books-content, #podcasts-content {
+    position: relative;
+    left: 150px;
+    white-space: nowrap;
+}
+
+#book-entry {
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 550px;
+  display: inline-block;
+}
+
+book-entry.book-name-and-author, book-entry.book-description {
+    line-height: 1px;
+}
+
+book-entry.book-rating {
+    white-space: nowrap;
+}
+
+#podcast-entry {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 500px;
+    display: inline-block;
+}
+
+podcast-entry.podcast-name-and-host, podcast-entry.podcast-description {
+    line-height: 1px;
+}
+
+podcast-entry.podcast-rating {
+    white-space: nowrap;
+}
+
+/*individual disciplines pages titles*/
+#biological-sciences-title, #chemistry-title {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+#medicine-title, #english-literature-title,
+    #physical-sciences-title, #physics-title, #astronomy-title,
+    #humanities-arts-title, #business-title, #music-title, #theatre-title,
+    #visual-arts-title {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#history-title {
+    position: absolute;
+    top: 70px;
+    left: -50px;
+}
+
+/*english+literature page*/
+.english-lit-books-section, .english-lit-podcasts-section, .physics-books-section,
+    .physics-podcasts-section {
+    position: relative;
+    top: 75px;
+    left: 50px;
+    background-color: white;
+    height: 500px;
+    width: 95%;
+    overflow-y: auto;
+    border-left: 1px solid black;
+}
+
+/*physical sciences page*/
+#physical-sciences-subdisciplines {
+    display: inline-block;
+    position: absolute;
+    top: 225px;
+    font-weight: 300;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+#physical-sciences-subdisciplines a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*outreach page*/
+#outreach {
+    background-color: white;
+}
+
+/*news page title*/
+#outreach-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+/*contact page*/
+#contact {
+    background-color: white;
+}
+
+/*contact page title*/
+#contact-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+#facebook, #instagram, #hopkins-groups, #email {
+    display: inline-block;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
