@@ -48,6 +48,43 @@
                 <h2>about us</h2>
             </div>
 
+            <div id="about-options">
+                <div id="about-option-1">
+                    <center>
+                        <a href="#" onclick="toggle_visibility('who-we-are');
+                            disappear('our-goals'); disappear('where-we-work');"><h3>who we are</h3></a>
+                    </center>
+                </div>
+                <div id="about-option-2">
+                    <center>
+                        <a href="#" onclick="toggle_visibility('our-goals'); disappear('who-we-are');
+                            disappear('where-we-work');"><h3>our goals</h3></a>
+                    </center>
+                </div>
+                <div id="about-option-3">
+                    <center>
+                        <a href="#" onclick="toggle_visibility('where-we-work'); disappear('who-we-are');
+                            disappear('our-goals');"><h3>where we work</h3></a>
+                    </center>
+                </div>
+            </div>
+
+            <div id="who-we-are">
+                <center>
+                    <p>hi my name is arielle</p>
+                </center>
+            </div>
+            <div id="our-goals">
+                <center>
+                    <p>equality.<p>
+                </center>
+            </div>
+            <div id="where-we-work">
+                <center>
+                    <p>local baltimore community + across the country</p>
+                </center>
+            </div>
+
         </div>
         <!--footer with contact links-->
         <center>
@@ -65,3 +102,21 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'inline-block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'inline-block';
+    }
+
+    function disappear(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'inline-block')
+          e.style.display = 'none';
+    }
+//-->
+</script>

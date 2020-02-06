@@ -177,6 +177,60 @@ p {
     left: 70px;
 }
 
+/*about page options*/
+#about-options {
+    position: absolute;
+    left: 45%;
+    width: 100%;
+    display: inline-block;
+    top: 250px;
+}
+
+#about-options a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#about-options a:hover {
+    color: #80ffe5;
+}
+
+#who-we-are, #our-goals, #where-we-work {
+    display: none;
+}
+
+#about-option-1 {
+    position: relative;
+    float: left;
+    display: inline-grid;
+    right: 30%;
+}
+
+#about-option-2 {
+    position: absolute;
+    display: inline-grid;
+    left: 0;
+}
+
+#about-option-3 {
+    position: absolute;
+    float: center;
+    display: inline-grid;
+    left: 27%;
+}
+
+#who-we-are, #our-goals, #where-we-work {
+    border: 3px solid #80ffe5;
+    background-color: #80ffe5;
+    opacity: 0.7;
+    width: 35%;
+    padding: 1%;
+    margin-top: 30%;
+    margin-left: 35%;
+    margin-top, margin-bottom: auto;
+}
+
 /*academic disciplines page*/
 #disciplines {
     background-color: white;
