@@ -224,11 +224,12 @@ p {
     border: 3px solid #80ffe5;
     background-color: #80ffe5;
     opacity: 0.7;
-    width: 35%;
+    width: 50%;
     padding: 1%;
-    margin-top: 30%;
-    margin-left: 35%;
+    margin-top: 25%;
+    margin-left: 25%;
     margin-top, margin-bottom: auto;
+    text-align: justify;
 }
 
 /*academic disciplines page*/
