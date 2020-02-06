@@ -363,13 +363,16 @@ p {
     position: relative;
     left: 150px;
     white-space: nowrap;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #book-entry {
   padding-left: 100px;
   padding-right: 100px;
   width: 550px;
-  display: inline-block;
+  display: inline-grid;
 }
 
 book-entry.book-name-and-author, book-entry.book-description {
@@ -384,7 +387,7 @@ book-entry.book-rating {
     padding-left: 100px;
     padding-right: 100px;
     width: 500px;
-    display: inline-block;
+    display: inline-grid;
 }
 
 podcast-entry.podcast-name-and-host, podcast-entry.podcast-description {
@@ -559,17 +562,13 @@ input[type=text]:focus, textarea:focus {
 }
 
 #contact-page-facebook {
-    display: inline-block;
-    position: absolute;
-    top: 70%;
-    left: 30%;
+    display: inline-grid;
+    padding: 10%;
 }
 
 #contact-page-instagram {
-    display: inline-block;
-    position: absolute;
-    top: 61%;
-    left: 80%;
+    display: inline-grid;
+    padding: 10%;
 }
 
 #facebook, #instagram, #hopkins-groups, #email {
