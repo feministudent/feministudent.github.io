@@ -102,6 +102,19 @@
     left: 1150px;
 }
 
+#star-12 {
+    position: absolute;
+    top: 5px;
+    left: 1400px;
+}
+
+#star-13 {
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 600px;
+    left: 1300px;
+}
+
 /*header for all webpages*/
 #header {
     height: 100%;
@@ -361,35 +374,9 @@ p {
 }
 
 /*when the user hovers over the discipline links, they turn mint green*/
-#biological-sciences-option:hover a, #medicine-option:hover a,
-    #tech-option:hover a, #physical-sciences-math-option:hover a,
-    #business-option:hover a, #politics-option:hover a,
+#stem-option:hover a, #business-option:hover a, #politics-option:hover a,
     #humanities-option:hover a, #arts-option:hover a {
     opacity: 0.7;
-}
-
-.physical-sciences-math-dropdown-content {
-    display: none;
-    position: absolute;
-    float: center;
-    text-decoration: none;
-    font-weight: 300;
-    white-space: nowrap;
-}
-
-.physical-sciences-math-dropdown:hover .physical-sciences-math-dropdown-content {
-    display: inline-block;
-    margin-left: 50px;
-}
-
-#physics-option, #chemistry-option, #astronomy-option, #math-option {
-    display: inline-block;
-}
-
-/*when the user hovers over the subdiscipline links, they turn mint green*/
-#physics-option:hover a, #chemistry-option:hover a,
-    #astronomy-option:hover a, #math-option:hover a {
-    color: #80ffe5;
 }
 
 .humanities-dropdown-content {
@@ -496,6 +483,49 @@ podcast-entry.podcast-rating {
 }
 
 /*individual disciplines pages titles*/
+
+/*stem*/
+/*stem page title*/
+#stem {
+    background-color: #414566;
+}
+#stem-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    color: #a7a376;
+}
+
+/*stem subdisciplines menu*/
+#stem-subdisciplines {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    font-weight: 300;
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #C4EEF1;
+}
+
+#stem-subdisciplines a {
+    display: inline-block;
+    color: #C4EEF1;
+    text-align: center;
+    text-decoration: none;
+    float: center;
+}
+
+#biological-sciences-option, #physical-sciences-math-option, #medicine-option, #tech-option {
+    display: inline-block;
+}
+
+#biological-sciences-option:hover a, #medicine-option:hover a,
+    #tech-option:hover a, #physical-sciences-math-option:hover a {
+    opacity: 0.7;
+}
+
 #biological-sciences-title, #chemistry-title {
     position: absolute;
     top: 50px;
@@ -557,6 +587,7 @@ podcast-entry.podcast-rating {
     position: absolute;
     top: 50px;
     left: 70px;
+    color: #a7a376;
 }
 
 #outreach-page-body {
@@ -571,6 +602,10 @@ podcast-entry.podcast-rating {
 }
 
 #outreach-page-body h3 {
+    color: white;
+}
+
+#project-title {
     color: black !important;
 }
 
