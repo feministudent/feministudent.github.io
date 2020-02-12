@@ -11,6 +11,97 @@
     height: auto;
 }
 
+/*background of page*/
+#background img {
+    z-index: -1;
+    animation-name: tilt-right;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+/* animation for background/stars to tilt */
+@keyframes tilt-right {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+#star-1 {
+    position: absolute;
+    transform: rotate(20deg);
+    top: 100px;
+    left: 20px;
+}
+
+#star-2 {
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 400px;
+    left: 175px;
+}
+
+#star-3 {
+    position: absolute;
+    transform: rotate(20deg);
+    top: 325px;
+    left: 250px;
+}
+
+#star-4 {
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+}
+
+#star-5 {
+    position: absolute;
+    transform: rotate(25deg);
+    top: 300px;
+    left: 800px;
+}
+
+#star-6 {
+    position: absolute;
+    top: 700px;
+    left: 750px;
+}
+
+#star-7 {
+    position: absolute;
+    top: 200px;
+    left: 350px;
+}
+
+#star-8 {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+#star-9 {
+    position: absolute;
+    transform: rotate(10deg);
+    top: 150px;
+    left: 1100px;
+}
+
+#star-10 {
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 750px;
+    left: 100px;
+}
+
+#star-11 {
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 800px;
+    left: 1150px;
+}
+
 /*header for all webpages*/
 #header {
     height: 100%;
@@ -45,20 +136,20 @@
 
 /* Facebook */
 .fa-facebook {
-    background: #80ffe5;
+    background: #C4EEF1;
     color: black;
 }
 
 /* Instagram */
 .fa-instagram {
-    background: #80ffe5;
+    background: #C4EEF1;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
     color: black;
 }
 
 /* Email */
 .fa-envelope-o {
-    background: #80ffe5;
+    background: #C4EEF1;
     color: black;
 }
 
@@ -66,12 +157,13 @@
 #navbar a {
     float: center;
     display: inline-block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 15px;
     text-decoration: none;
     font-size: 17px;
     font-weight: 300;
+    z-index: 1;
 }
 
 #index-option, #about-option, #disciplines-option, #universities-option,
@@ -83,7 +175,7 @@
     they turn mint green*/
     #index-option:hover a, #about-option:hover a, #disciplines-option:hover a,
         #universities-option:hover a, #outreach-option:hover a, #contact-option:hover a {
-        color: #80ffe5;
+        color: #a7a376;
     }
 
 /*body text for all pages*/
@@ -115,6 +207,7 @@ h3 {
     font-size: 1.5rem;
     font-family: 'Quicksand', serif;
     font-weight: 300;
+    color: #C4EEF1;
 }
 
 p {
@@ -125,7 +218,7 @@ p {
 
 /*home page*/
 #index {
-    background-color: white;
+    background-color: #414566;
 }
 
 /*formatting for webpage title*/
@@ -134,11 +227,12 @@ p {
     float: right;
     display: inline-block;
     padding: 15px;
+    color: #C4EEF1;
 }
 
 /*when the user hovers over the title link, it turns mint green*/
 #title:hover a {
-    color: #80ffe5;
+    opacity: 0.7;
 }
 
 /*formatting for webpage title logo*/
@@ -154,10 +248,11 @@ p {
     left: 50%;
     margin-top: 300px;
     margin-left: -370px;
+    color: white;
 }
 
 #index-page-body a {
-    color: #80ffe5;
+    color: #a7a376;
     font-weight: bold;
     float: center;
     display: inline-block;
@@ -167,7 +262,7 @@ p {
 
 /*about page*/
 #about {
-    background-color: white;
+    background-color: #414566;
 }
 
 /*about page title*/
@@ -175,6 +270,7 @@ p {
     position: absolute;
     top: 50px;
     left: 70px;
+    color: #a7a376;
 }
 
 /*about page options*/
@@ -193,7 +289,7 @@ p {
 }
 
 #about-options a:hover {
-    color: #80ffe5;
+    opacity: 0.7;
 }
 
 #who-we-are, #our-goals, #where-we-work {
@@ -221,8 +317,8 @@ p {
 }
 
 #who-we-are, #our-goals, #where-we-work {
-    border: 3px solid #80ffe5;
-    background-color: #80ffe5;
+    border: 3px solid #C4EEF1;
+    background-color: #C4EEF1;
     opacity: 0.7;
     width: 50%;
     padding: 1%;
@@ -234,7 +330,7 @@ p {
 
 /*academic disciplines page*/
 #disciplines {
-    background-color: white;
+    background-color: #414566;
 }
 
 /*disciplines page title*/
@@ -242,6 +338,7 @@ p {
     position: absolute;
     top: 50px;
     left: 70px;
+    color: #a7a376;
 }
 
 /*list of clickable links to different disciplines*/
@@ -257,7 +354,7 @@ p {
 #disciplines-list a {
     float: center;
     display: inline-block;
-    color: black;
+    color: #C4EEF1;
     text-align: center;
     text-decoration: none;
     font-weight: 300;
@@ -268,7 +365,7 @@ p {
     #tech-option:hover a, #physical-sciences-math-option:hover a,
     #business-option:hover a, #politics-option:hover a,
     #humanities-option:hover a, #arts-option:hover a {
-    color: #80ffe5;
+    opacity: 0.7;
 }
 
 .physical-sciences-math-dropdown-content {
@@ -452,7 +549,7 @@ podcast-entry.podcast-rating {
 
 /*outreach page*/
 #outreach {
-    background-color: white;
+    background-color: #414566;
 }
 
 /*outreach page title*/
@@ -473,10 +570,14 @@ podcast-entry.podcast-rating {
     height: 700px;
 }
 
+#outreach-page-body h3 {
+    color: black !important;
+}
+
 #project {
     display: inline-grid;
-    border: 3px solid #80ffe5;
-    background-color: #80ffe5;
+    border: 3px solid #C4EEF1;
+    background-color: #C4EEF1;
     opacity: 0.7;
     width: 35%;
     padding: 1%;
@@ -502,7 +603,7 @@ podcast-entry.podcast-rating {
 
 /*contact page*/
 #contact {
-    background-color: white;
+    background-color: #414566;
 }
 
 /*contact page title*/
@@ -510,26 +611,24 @@ podcast-entry.podcast-rating {
     position: absolute;
     top: 50px;
     left: 70px;
+    color: #a7a376;
 }
 
 #contact-page-body {
     float: center;
-    display: inline-block;
-    color: black;
+    color: #C4EEF1;
     text-align: center;
     text-decoration: none;
+    width: 100%;
+    z-index: 1;
     position: absolute;
-    top: 200px;
-    left: 70px;
+    display: inline-grid;
+    top: 30%;
 }
 /*inquiry form*/
-#inquiry-form {
-    display: inline-grid;
-}
-
 #inquiry-form a {
     text-decoration: none;
-    color: black;
+    color: #C4EEF1;
     border-bottom: dotted 1px;
 }
 
@@ -546,32 +645,14 @@ input[type=text], textarea {
     outline: none;
     font-size: 1rem;
     font-family: 'Quicksand', serif;
-    display: inline-block;
     text-align: center;
 }
 
 input[type=text]:focus, textarea:focus {
-    border: solid 2px #80ffe5;
+    border: solid 2px #C4EEF1;
 }
 
-#social-media {
-    display: inline-grid;
-    white-space: nowrap;
-    position: relative;
-    padding: 100px;
-}
-
-#contact-page-facebook {
-    display: inline-grid;
-    padding: 10%;
-}
-
-#contact-page-instagram {
-    display: inline-grid;
-    padding: 10%;
-}
-
-#facebook, #instagram, #hopkins-groups, #email {
+#facebook, #instagram, #email {
     display: inline-block;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
