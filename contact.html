@@ -92,12 +92,16 @@
             <center>
                 <div id="inquiry-form">
                     <h3>for comments and inquiries: </h3>
-                    <form>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                    <!--sends form to php server; $_SERVER["PHP_SELF"] sends submitted form data to page itself,
+                        instead of opening new window, so user gets error messages on same page as form.-->
+                    <form action="contact.php" method="POST" />
+                        <input type="text" name="name" placeholder="Name">
                         <br>
-                        <input type="text" name="email" id="email" placeholder="Email">
+                        <input type="text" name="email" placeholder="Email">
                         <br>
-                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message"></textarea>
+                        <br>
+                        <input type="submit" value="Send"><input type="reset" value="Clear">
                     </form>
                     <p> you can also <b><a href="mailto:iamafeministudent@gmail.com">email us directly</a><b>.
                 </div>
