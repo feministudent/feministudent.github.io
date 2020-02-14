@@ -658,8 +658,9 @@ podcast-entry.podcast-rating {
     z-index: 1;
     position: absolute;
     display: inline-grid;
-    top: 30%;
+    top: 22%;
 }
+
 /*inquiry form*/
 #inquiry-form a {
     text-decoration: none;
@@ -685,6 +686,20 @@ input[type=text], textarea {
 
 input[type=text]:focus, textarea:focus {
     border: solid 2px #C4EEF1;
+}
+
+.submit-button {
+    background-color: #C4EEF1;
+    padding: 1rem 1rem;
+    border-radius: 0.325rem;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Quicksand', serif;
+    text-align: center;
+}
+
+.submit-button:hover {
+    opacity: 0.7;
 }
 
 #facebook, #instagram, #email {
