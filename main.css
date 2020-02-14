@@ -4,7 +4,8 @@
 /*container for everything on a web page*/
 #page-container {
     min-height: 100vh; /* will cover the 100% of viewport */
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: block;
     position: relative;
     padding-bottom: 100px; /* height of your footer */
@@ -113,6 +114,83 @@
     transform: rotate(-20deg);
     top: 600px;
     left: 1300px;
+}
+
+#star-14 {
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 900px;
+    left: 400px;
+    opacity: 0.8;
+}
+
+#star-15 {
+    position: absolute;
+    transform: rotate(10deg);
+    top: 850px;
+    left: 1025px;
+    opacity: 0.8;
+}
+
+#star-16 {
+    position: absolute;
+    transform: rotate(10deg);
+    top: 1000px;
+    left: 1350px;
+    opacity: 0.8;
+}
+
+#star-17 {
+    position: absolute;
+    top: 1150px;
+    left: 550px;
+    opacity: 0.6;
+}
+
+#star-18 {
+    position: absolute;
+    transform: rotate(20deg);
+    top: 1075px;
+    left: 675px;
+    opacity: 0.6;
+}
+
+#star-19 {
+    position: absolute;
+    transform: rotate(10deg);
+    top: 1300px;
+    left: 600px;
+    opacity: 0.6;
+}
+
+#star-20 {
+    position: absolute;
+    top: 1250px;
+    left: 250px;
+    opacity: 0.4;
+}
+
+#star-21 {
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 1200px;
+    left: 1100px;
+    opacity: 0.4;
+}
+
+#star-22 {
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 1500px;
+    left: 900px;
+    opacity: 0.2;
+}
+
+#star-23 {
+    position: absolute;
+    top: 1350px;
+    left: 1250px;
+    opacity: 0.4;
 }
 
 /*header for all webpages*/
