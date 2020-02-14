@@ -257,7 +257,7 @@
     z-index: 1;
 }
 
-#index-option, #about-option, #disciplines-option, #universities-option,
+#index-option, #about-option, #disciplines-option, #uni-policies-option,
     #outreach-option, #contact-option {
     display: inline-block;
 }
@@ -265,7 +265,7 @@
 /*when the user hovers over the navigation bar options,
     they turn mint green*/
     #index-option:hover a, #about-option:hover a, #disciplines-option:hover a,
-        #universities-option:hover a, #outreach-option:hover a, #contact-option:hover a {
+        #uni-policies-option:hover a, #outreach-option:hover a, #contact-option:hover a {
         color: #a7a376;
     }
 
@@ -508,8 +508,9 @@ p {
 /*subdiscipline pages content*/
 .books-section, .podcasts-section {
     position: relative;
+    display: inline-grid;
     left: 50px;
-    background-color: white;
+    background-color: #C4EEF1;
     height: 500px;
     width: 95%;
     overflow-y: auto;
@@ -518,16 +519,16 @@ p {
 
 #books-title, #podcasts-title {
     position: relative;
-    left: 50px;
+    float: center;
+    left: 48%;
+    color: #a7a376 !important;
 }
 
-#books-content, #podcasts-content {
+#books-content {
     position: relative;
     left: 150px;
     white-space: nowrap;
-    height: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 10%:
 }
 
 #book-entry {
@@ -543,6 +544,13 @@ book-entry.book-name-and-author, book-entry.book-description {
 
 book-entry.book-rating {
     white-space: nowrap;
+}
+
+#podcasts-content {
+      position: relative;
+      left: 150px;
+      white-space: nowrap;
+      top: 10%:
 }
 
 #podcast-entry {
@@ -604,10 +612,46 @@ podcast-entry.podcast-rating {
     opacity: 0.7;
 }
 
-#biological-sciences-title, #chemistry-title {
-    position: absolute;
-    top: 50px;
-    left: 20px;
+#biological-sciences-section, #physical-sciences-math-section,
+    #medicine-section, #tech-section {
+    display: none;
+    border: 3px solid #C4EEF1;
+    background-color: #C4EEF1;
+    opacity: 0.7;
+    width: 80%;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-top, margin-bottom: auto;
+    text-align: justify;
+    white-space: nowrap;
+}
+
+#books-option h3, #podcasts-option h3 {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    float: center;
+    white-space: nowrap;
+}
+
+#books-option h3:hover, #podcasts-option h3:hover {
+    color: #a7a376 !important;
+}
+
+#biological-sciences-books-section, #biological-sciences-podcasts-section,
+    #physical-sciences-math-books-section, #physical-sciences-math-podcasts-section,
+    #medicine-books-section, #medicine-podcasts-section,
+    #tech-books-section, #tech-podcasts-section {
+    display: none;
+    position: relative;
+    left: 50px;
+    background-color: #C4EEF1;
+    height: 500px;
+    width: 95%;
+    overflow-y: auto;
+    border-left: 1px solid black;
 }
 
 #medicine-title, #english-literature-title,

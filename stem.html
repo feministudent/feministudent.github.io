@@ -48,6 +48,36 @@
             <div id="star-13">
                 <img src="gold-star-filled.png" alt="star-13" width="20" height="20"/>
             </div>
+            <div id="star-14">
+                <img src="gold-star-filled.png" alt="star-14" width="20" height="20"/>
+            </div>
+            <div id="star-15">
+                <img src="gold-star-filled.png" alt="star-15" width="20" height="20"/>
+            </div>
+            <div id="star-16">
+                <img src="gold-star-filled.png" alt="star-16" width="20" height="20"/>
+            </div>
+            <div id="star-17">
+                <img src="gold-star-filled.png" alt="star-17" width="20" height="20"/>
+            </div>
+            <div id="star-18">
+                <img src="gold-star-filled.png" alt="star-18" width="20" height="20"/>
+            </div>
+            <div id="star-19">
+                <img src="gold-star-filled.png" alt="star-19" width="20" height="20"/>
+            </div>
+            <div id="star-20">
+                <img src="gold-star-filled.png" alt="star-20" width="20" height="20"/>
+            </div>
+            <div id="star-21">
+                <img src="gold-star-filled.png" alt="star-21" width="20" height="20"/>
+            </div>
+            <div id="star-22">
+                <img src="gold-star-filled.png" alt="star-22" width="20" height="20"/>
+            </div>
+            <div id="star-23">
+                <img src="gold-star-filled.png" alt="star-23" width="20" height="20"/>
+            </div>
         </div>
         <div id="header">
             <!--navigation bar-->
@@ -62,6 +92,9 @@
                 <div id="disciplines-option">
                     <a href="disciplines.html">disciplines</a>
                 </div>
+                <div id="uni-policies-option">
+                    <a href="#">uni policies</a>
+                </div>
                 <div id="outreach-option">
                     <a href="outreach.html">outreach</a>
                 </div>
@@ -74,7 +107,7 @@
                     <a href="index.html">
                         <h3>FEMINISTUDENT
                             <div id="title-logo">
-                                <img src="feministudent-logo.png" alt="title-logo" width="60" height="60">
+                                <img src="feministudent-logo-sky-blue.png" alt="title-logo" width="60" height="60">
                             </div>
                         </h3>
                     </a>
@@ -90,24 +123,496 @@
             <center>
                 <div id="stem-subdisciplines">
                     <div id="biological-sciences-option">
-                        <a href="biological-sciences.html">biological sciences</a>
+                        <a href="#" onclick="toggle_visibility('biological-sciences-section');
+                            disappear('physical-sciences-math-section'); disappear('medicine-section');
+                            disappear('tech-section');">biological sciences</a>
                     </div> |
                     <div id="physical-sciences-math-option">
-                        <a href="physical-sciences.html">physical sciences+math</a>
+                        <a href="#" onclick="toggle_visibility('physical-sciences-math-section');
+                            disappear('biological-sciences-section'); disappear('medicine-section');
+                            disappear('tech-section');">physical sciences+math</a>
                     </div> |
                     <div id="medicine-option">
-                        <a href="medicine.html">medicine</a>
+                        <a href="#" onclick="toggle_visibility('medicine-section');
+                            disappear('biological-sciences-section'); disappear('physical-sciences-math-section');
+                            disappear('tech-section');">medicine</a>
                     </div> |
                     <div id="tech-option">
-                        <a href="tech.html">tech</a>
+                        <a href="#" onclick="toggle_visibility('tech-section'); disappear('biological-sciences-section');
+                            disappear('physical-sciences-math-section'); disappear('medicine-section');">tech</a>
                     </div>
                 </div>
             </center>
 
+            <!--subdiscipline sections-->
+
+            <!--biological sciences-->
+            <div id="biological-sciences-section">
+                <center>
+                    <div id="books-option">
+                        <a href="#" onclick="toggle_visibility('biological-sciences-books-section');
+                            disappear('biological-sciences-podcasts-section'); highlight('option-1');">
+                            <h3 style="color:black;"><div id="option-1">books</div></h3></a>
+                    </div>
+                    <div id="podcasts-option">
+                        <a href="#" onclick="toggle_visibility('biological-sciences-podcasts-section');
+                            disappear('biological-sciences-books-section');">
+                            <h3 style="color:black;">podcasts<h3></a>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <div id="biological-sciences-books-section">
+                    <div id="books-content">
+                        <div id="book-entry">
+                            <center>
+                                <img src="feminism-in-twentieth-century-science-technology-and-medicine.jpg"
+                                    width="150" height="250">
+                                <div class="book-name-and-author">
+                                    <p>
+                                        Feminism in Twentieth-Century Science, Technology, and Medicine
+                                        <br>
+                                        Edited by Angela N.H. Creager, Elizabeth Lunbeck,
+                                        <br>
+                                        and Londa Schiebinger
+                                    </p>
+                                </div>
+                                <div class="book-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="book-description">
+                                    <p>
+                                        What useful changes has feminism brought to science? Feminists have
+                                        <br>
+                                        enjoyed success in their efforts to open many fields to women as
+                                        <br>
+                                        participants. But the effects of feminism have not been restricted to
+                                        <br>
+                                        altering employment and professional opportunities for women. The essays
+                                        <br>
+                                        in this volume explore how feminist theory has had a direct impact on
+                                        <br>
+                                        research in the biological and social sciences, in medicine, and in
+                                        <br>
+                                        technology, often providing the impetus for fundamentally changing the
+                                        <br>
+                                        theoretical underpinnings and practices of such research. In archaeology,
+                                        <br>
+                                        evidence of women’s hunting activities suggested by spears found in women’s
+                                        <br>
+                                        graves is no longer dismissed; computer scientists have used feminist
+                                        <br>
+                                        epistemologies for rethinking the human-interface problems of our growing
+                                        <br>
+                                        reliance on computers. Attention to women’s movements often tends to
+                                        <br>
+                                        reinforce a presumption that feminism changes institutions through
+                                        <br>
+                                        critique-from-without. This volume reveals the potent but not always
+                                        <br>
+                                        visible transformations feminism has brought to science, technology, and
+                                        <br>
+                                        medicine from within.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                  </div>
+                  <div id="biological-sciences-podcasts-section">
+                    <div id="podcasts-content">
+                      <div id="podcast-entry">
+                          <center>
+                              <img src="lady-science-podcast.jpg" width="200" height="200">
+                              <div class="podcast-name-and-host">
+                                  <p>
+                                      Lady Science Podcast
+                                      <br>
+                                      Hosted by Anna Reser, Leila McNeill, and Rebecca Ortenberg
+                                  </p>
+                              </div>
+                              <div class="podcast-rating">
+                                  <p>
+                                      Our rating: &nbsp;
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                  </p>
+                              </div>
+                              <div class="podcast-description">
+                                  <p>
+                                      A monthly deep dive on topics centered on women and gender in the
+                                      <br>
+                                      history and popular culture of science.
+                                  </p>
+                              </div>
+                          </center>
+                      </div>
+                      <div id="podcast-entry">
+                          <center>
+                              <img src="latinolabs.jpg" width="200" height="200">
+                              <div class="podcast-name-and-host">
+                                  <p>
+                                      LatinoLabs
+                                      <br>
+                                      Hosted by Nico Hernandez
+                                  </p>
+                              </div>
+                              <div class="podcast-rating">
+                                  <p>
+                                      Our rating: &nbsp;
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-filled.png" width="20" height="20">
+                                      <img src="mint-green-star-empty.png" width="20" height="20">
+                                  </p>
+                              </div>
+                              <div class="podcast-description">
+                                  <p>
+                                      A science, technology and society podcast produced by Nico
+                                      <br>
+                                      Hernandez Charpak, PhD in collaboration with LatinX Scientists
+                                      <br>
+                                      around the world.
+                                  </p>
+                              </div>
+                          </center>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <br>
+            <br>
+
+            <!--physical sciences-->
+            <div id="physical-sciences-math-section">
+                <center>
+                    <div id="books-option">
+                        <a href="#" onclick="toggle_visibility('physical-sciences-math-books-section');
+                            disappear('physical-sciences-math-podcasts-section');">
+                            <h3 style="color:black;">books</h3></a>
+                    </div>
+                    <div id="podcasts-option">
+                        <a href="#" onclick="toggle_visibility('physical-sciences-math-podcasts-section');
+                            disappear('physical-sciences-math-books-section');">
+                            <h3 style="color:black;">podcasts<h3></a>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <div id="physical-sciences-math-books-section">
+                    <center>
+                        <p style="font-size:1.2rem; color:#a7a376"><b>this page isn't ready yet. check back soon!</b></p>
+                    </center>
+                </div>
+                <div id="physical-sciences-math-podcasts-section">
+                    <center>
+                        <p style="font-size:1.2rem; color:#a7a376"><b>this page isn't ready yet. check back soon!</b></p>
+                    </center>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="medicine-section">
+                <center>
+                    <div id="books-option">
+                        <a href="#" onclick="toggle_visibility('medicine-books-section');
+                            disappear('medicine-podcasts-section');">
+                            <h3 style="color:black;">books</h3></a>
+                    </div>
+                    <div id="podcasts-option">
+                        <a href="#" onclick="toggle_visibility('medicine-podcasts-section');
+                            disappear('medicine-books-section');">
+                            <h3 style="color:black;">podcasts<h3></a>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <div id="medicine-books-section">
+                    <center>
+                        <p style="font-size:1.2rem; color:#a7a376"><b>this page isn't ready yet. check back soon!</b></p>
+                    </center>
+                </div>
+                <div id="medicine-podcasts-section">
+                    <center>
+                        <p style="font-size:1.2rem; color:#a7a376"><b>this page isn't ready yet. check back soon!</b></p>
+                    </center>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="tech-section">
+                <center>
+                    <div id="books-option">
+                        <a href="#" onclick="toggle_visibility('tech-books-section');
+                            disappear('tech-podcasts-section');">
+                            <h3 style="color:black;">books</h3></a>
+                    </div>
+                    <div id="podcasts-option">
+                        <a href="#" onclick="toggle_visibility('tech-podcasts-section');
+                            disappear('tech-books-section');">
+                            <h3 style="color:black;">podcasts<h3></a>
+                    </div>
+                </center>
+                <br>
+                <br>
+                <div id="tech-books-section">
+                    <div id="books-content">
+                        <div id="book-entry">
+                            <center>
+                                <img src="brave-not-perfect.jpg" alt="brave-not-perfect" width="150" height="250">
+                                <div class="book-name-and-author">
+                                    <p>
+                                        Brave, Not Perfect
+                                        <br>
+                                        By Reshma Sanjani (Girls Who Code founder and CEO)
+                                    </p>
+                                </div>
+                                <div class="book-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="book-description">
+                                    <p>
+                                        In this book inspired by her popular TED Talk, the founder and CEO of
+                                        <br>
+                                        Girls Who Code urges women to embrace imperfection and live a bolder,
+                                        <br>
+                                        more authentic life.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div id="tech-podcasts-section">
+                    <div id="podcasts-content">
+                        <div id="podcast-entry">
+                            <center>
+                                <img src="fempire.jpg" alt="fempire" width="200" height="100">
+                                <div class="podcast-name-and-host">
+                                    <p>
+                                        Fempire - Front End News with Women in Tech
+                                        <br>
+                                        Hosted by various women
+                                    </p>
+                                </div>
+                                <div class="podcast-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="podcast-description">
+                                    <p>
+                                        This podcast features front end women in tech. A monthly conversation
+                                        <br>
+                                        with women in JavaScript talking about all things front end.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                        <div id="podcast-entry">
+                            <center>
+                                <img src="getwitit.jpg" alt="getwitit" width="200" height="200">
+                                <div class="podcast-name-and-host">
+                                    <p>
+                                        getWITit | Women in technology
+                                        <br>
+                                        Hosted by Elizabeth Tolia
+                                    </p>
+                                </div>
+                                <div class="podcast-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="podcast-description">
+                                    <p>
+                                        getWITit looks into the decline of women in the technology industry
+                                        <br>
+                                        through interviews with community leaders and members and influential
+                                        <br>
+                                        individuals. The organization GetWITit promotes awareness, addresses
+                                        <br>
+                                        attrition, creates opportunities to transition to tech, and prepare
+                                        <br>
+                                        women for leadership. Read more at getwitit.org.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                        <div id="podcast-entry">
+                            <center>
+                                <img src="techish.jpg" alt="techish" width="200" height="200">
+                                <div class="podcast-name-and-host">
+                                    <p>
+                                        Techish
+                                        <br>
+                                        Hosted by Abadesi Osunsade and Michael Berhane
+                                    </p>
+                                </div>
+                                <div class="podcast-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="podcast-description">
+                                    <p>
+                                        A podcast by two millennials talking about all things tech, pop culture,
+                                        <br>
+                                        and life. Includes discussions on the role of gender and race in these
+                                        <br>
+                                        domains. Visit techishpod.com.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                        <div id="podcast-entry">
+                            <center>
+                                <img src="witty.jpg" alt="witty" width="200" height="200">
+                                <div class="podcast-name-and-host">
+                                    <p>
+                                        Witty: Women in Tech Talk To Yaz
+                                        <br>
+                                        Hosted by Yasmin Alameddine
+                                    </p>
+                                </div>
+                                <div class="podcast-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="podcast-description">
+                                    <p>
+                                        A weekly podcast where women in technology share their stories. Founder
+                                        <br>
+                                        and host Yasmin has fun, candid conversations with female leader's about
+                                        <br>
+                                        how they navigate the technology industry. Witty's guests range from Bumble
+                                        <br>
+                                        founders, Instagram data scientists, Netflix recruiters, Google marketers,
+                                        <br>
+                                        to angel investors. Witty is growing quickly, backed by an all-women team,
+                                        <br>
+                                        partnering with women-first organizations, and reaching more than 30,000
+                                        <br>
+                                        loyal listeners in over 45 countries. Learn more by visiting wittypod.com
+                                        <br>
+                                        or emailing podcastwitty@gmail.com.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                        <div id="podcast-entry">
+                            <center>
+                                <img src="women-in-business-and-technology.jpg" alt="women-in-business-and-technology" width="200"
+                                    height="200">
+                                <div class="podcast-name-and-host">
+                                    <p>
+                                        Women in Business & Technology (sponsored by Microsoft)
+                                        <br>
+                                        Hosted by Sonia Dara and Colleen O'Brien
+                                    </p>
+                                </div>
+                                <div class="podcast-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                    </p>
+                                </div>
+                                <div class="podcast-description">
+                                    <p>
+                                        Created to showcase interviews with prominent women in business and tech
+                                        <br>
+                                        roles and their allies, and coverage of programs disrupting inclusion in the
+                                        <br>
+                                        workplace. Whether you’re just starting out in the tech industry, strategizing
+                                        <br>
+                                        on how to get your next business role, or managing a woman for the first time,
+                                        <br>
+                                        this podcast provides some great insights to support a great career and broader
+                                        <br>
+                                        inclusion. See https://www.microsoft.com/en-us/women-in-business-technology.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                        <div id="podcast-entry">
+                            <center>
+                                <img src="women-who-code.jpg" alt="women-who-code" width="200" height="200">
+                                <div class="podcast-name-and-host">
+                                    <p>
+                                        Women Who Code Radio
+                                        <br>
+                                        Hosted by Tara Hernandez
+                                    </p>
+                                </div>
+                                <div class="podcast-rating">
+                                    <p>
+                                        Our rating: &nbsp;
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-filled.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                        <img src="mint-green-star-empty.png" width="20" height="20">
+                                </div>
+                                <div class="podcast-description">
+                                    <p>
+                                        Periodic discussions on a variety of topics concerning diversity and inclusion
+                                        <br>
+                                        in the high tech industry.
+                                    </p>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!--footer with contact links-->
         <center>
-            <div id="footer">
+            <div id="footer" style="top:1500px;">
                 <!-- icon library -->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -120,3 +625,30 @@
     </div>
 </body>
 </html>
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'inline-block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'inline-block';
+    }
+
+    function disappear(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'inline-block')
+          e.style.display = 'none';
+
+    function highlight(id) {
+        var e = document.getElementById(id);
+        if(e.style.color == 'black')
+          e.style.color = '#a7a376';
+        else {
+          e.style.color = 'black';
+        }
+    }
+    }
+//-->
+</script>
