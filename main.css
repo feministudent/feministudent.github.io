@@ -452,8 +452,8 @@ p {
 }
 
 /*when the user hovers over the discipline links, they turn mint green*/
-#stem-option:hover a, #business-option:hover a, #politics-option:hover a,
-    #humanities-option:hover a, #arts-option:hover a {
+#stem-option:hover a, #humanities-option:hover a, #social-sciences-option:hover a,
+    #arts-option:hover a {
     opacity: 0.7;
 }
 
@@ -471,15 +471,11 @@ p {
     margin-left: 50px;
 }
 
-#english-literature-option, #history-option {
+#english-literature-option, {
     display: inline-block;
 }
 
 #english-literature-option:hover a {
-    color: #80ffe5;
-}
-
-#history-option:hover a {
     color: #80ffe5;
 }
 
@@ -571,10 +567,10 @@ podcast-entry.podcast-rating {
 /*individual disciplines pages titles*/
 
 /*stem*/
-/*stem page title*/
 #stem {
     background-color: #414566;
 }
+
 #stem-title {
     position: absolute;
     top: 50px;
@@ -644,6 +640,77 @@ podcast-entry.podcast-rating {
     #physical-sciences-math-books-section, #physical-sciences-math-podcasts-section,
     #medicine-books-section, #medicine-podcasts-section,
     #tech-books-section, #tech-podcasts-section {
+    display: none;
+    position: relative;
+    left: 50px;
+    background-color: #C4EEF1;
+    height: 500px;
+    width: 95%;
+    overflow-y: auto;
+    border-left: 1px solid black;
+}
+
+/*social sciences*/
+#social-sciences {
+    background-color: #414566;
+}
+
+#social-sciences-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    color: #a7a376;
+}
+
+/*social sciences subdisciplines menu*/
+#social-sciences-subdisciplines {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    font-weight: 300;
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #C4EEF1;
+}
+
+#social-sciences-subdisciplines a {
+    display: inline-block;
+    color: #C4EEF1;
+    text-align: center;
+    text-decoration: none;
+    float: center;
+}
+
+#anthropology-option, #business-economics-option, #history-option, #politics-option, #law-option {
+    display: inline-block;
+}
+
+#anthropology-option:hover a, #business-economics-option:hover a,
+    #history-option:hover a, #politics-option:hover a, #law-option:hover a {
+    opacity: 0.7;
+}
+
+#anthropology-section, #business-economics-section, #history-section,
+    #politics-section, #law-section {
+    display: none;
+    border: 3px solid #C4EEF1;
+    background-color: #C4EEF1;
+    opacity: 0.7;
+    width: 80%;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-top, margin-bottom: auto;
+    text-align: justify;
+    white-space: nowrap;
+}
+
+#anthropology-books-section, #business-economics-books-section, #history-books-section,
+    #politics-books-section, #law-books-section, #anthropology-podcasts-section,
+    #business-economics-podcasts-section, #history-podcasts-section, #politics-podcasts-section,
+    #law-podcasts-section {
     display: none;
     position: relative;
     left: 50px;
