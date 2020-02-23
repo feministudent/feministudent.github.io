@@ -861,6 +861,19 @@ podcast-entry.podcast-rating {
     border-left: 1px solid black;
 }
 
+/*uni policies page*/
+#uni-policies {
+    background-color: #414566;
+}
+
+/*uni policies page title*/
+#uni-policies-title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    color: #a7a376;
+}
+
 /*outreach page*/
 #outreach {
     background-color: #414566;
