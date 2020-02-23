@@ -451,7 +451,7 @@ p {
     font-weight: 300;
 }
 
-/*when the user hovers over the discipline links, they turn mint green*/
+/*when the user hovers over the discipline links, they lighten*/
 #stem-option:hover a, #humanities-option:hover a, #social-sciences-option:hover a,
     #arts-option:hover a {
     opacity: 0.7;
@@ -476,28 +476,6 @@ p {
 }
 
 #english-literature-option:hover a {
-    color: #80ffe5;
-}
-
-.arts-dropdown-content {
-    display: none;
-    position: absolute;
-    float: center;
-    text-decoration: none;
-    font-weight: 300;
-    white-space: nowrap;
-}
-
-.arts-dropdown:hover .arts-dropdown-content {
-    display: inline-block;
-    margin-left: 50px;
-}
-
-#music-option, #theatre-option, #visual-arts-option {
-    display: inline-block;
-}
-
-#music-option:hover a, #theatre-option:hover a, #visual-arts-option:hover a {
     color: #80ffe5;
 }
 
@@ -721,19 +699,71 @@ podcast-entry.podcast-rating {
     border-left: 1px solid black;
 }
 
-#medicine-title, #english-literature-title,
-    #physical-sciences-title, #physics-title, #astronomy-title,
-    #humanities-arts-title, #business-title, #music-title, #theatre-title,
-    #visual-arts-title {
-    position: absolute;
-    top: 50px;
-    left: 50px;
+/*arts*/
+#arts {
+    background-color: #414566;
 }
 
-#history-title {
+#arts-title {
     position: absolute;
-    top: 70px;
-    left: -50px;
+    top: 50px;
+    left: 70px;
+    color: #a7a376;
+}
+
+/*arts subdisciplines menu*/
+#arts-subdisciplines {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    font-weight: 300;
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #C4EEF1;
+}
+
+#arts-subdisciplines a {
+    display: inline-block;
+    color: #C4EEF1;
+    text-align: center;
+    text-decoration: none;
+    float: center;
+}
+
+#music-option, #theatre-option, #visual-arts-option {
+    display: inline-block;
+}
+
+#music-option:hover a, #theatre-option:hover a, #visual-arts-option:hover a {
+    opacity: 0.7;
+}
+
+#music-section, #theatre-section, #visual-arts-section {
+    display: none;
+    border: 3px solid #C4EEF1;
+    background-color: #C4EEF1;
+    opacity: 0.7;
+    width: 80%;
+    padding: 1%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-top, margin-bottom: auto;
+    text-align: justify;
+    white-space: nowrap;
+}
+
+#music-books-section, #theatre-books-section, #visual-arts-books-section,
+    #music-podcasts-section, #theatre-podcasts-section, #visual-arts-podcasts-section {
+    display: none;
+    position: relative;
+    left: 50px;
+    background-color: #C4EEF1;
+    height: 500px;
+    width: 95%;
+    overflow-y: auto;
+    border-left: 1px solid black;
 }
 
 /*english+literature page*/
@@ -747,23 +777,6 @@ podcast-entry.podcast-rating {
     width: 95%;
     overflow-y: auto;
     border-left: 1px solid black;
-}
-
-/*physical sciences page*/
-#physical-sciences-subdisciplines {
-    display: inline-block;
-    position: absolute;
-    top: 225px;
-    font-weight: 300;
-    white-space: nowrap;
-    font-size: 20px;
-}
-
-#physical-sciences-subdisciplines a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
 }
 
 /*outreach page*/
